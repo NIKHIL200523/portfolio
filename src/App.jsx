@@ -1,5 +1,6 @@
 
 import './App.css'
+import SnakeGame from './SnakeGame.jsx'
 
 const skills = [
   'C++',
@@ -50,14 +51,16 @@ function App() {
           NB<span>.</span>
         </a>
 
-        <nav className="nav-links" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact" className="nav-contact">
-            Contact ↗
-          </a>
-        </nav>
+       
+<nav className="nav-links" aria-label="Main navigation">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact" className="nav-contact">
+    Contact ↗
+  </a>
+</nav>
+
       </header>
 
       <main>
@@ -251,6 +254,7 @@ function App() {
             nikhilbabu200523@gmail.com
           </p>
 
+         
           <a
             className="button button-primary contact-button"
             href="mailto:nikhilbabu200523@gmail.com"
@@ -258,8 +262,9 @@ function App() {
             Say hello <span>↗</span>
           </a>
         </section>
-        
       </main>
+
+      <SnakeGame />
 
       <footer className="footer">
         <a className="logo" href="#home">
@@ -269,7 +274,9 @@ function App() {
         <a href="#home" className="back-to-top">
           BACK TO TOP ↑
         </a>
-        <span className="copyright">© {new Date().getFullYear()} Nikhil Babu Y.</span>
+        <span className="copyright">
+          © {new Date().getFullYear()} Nikhil Babu Y.
+        </span>
       </footer>
     </>
   )
